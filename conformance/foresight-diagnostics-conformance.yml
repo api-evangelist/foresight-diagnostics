@@ -1,0 +1,75 @@
+generated: '2026-08-16'
+method: searched
+source: https://foresight-dx.com/
+note: >-
+  Foresight Diagnostics publishes no API and therefore has no API-standards conformance
+  surface — there is no OpenAPI, AsyncAPI, GraphQL SDL, OAuth metadata document or
+  RFC 9457 error envelope to assert against. What it does publish, in the site-wide
+  footer of every page on its own domain, is a set of laboratory and information-security
+  certifications with named certificate numbers, plus a downloadable ISO 27001 certificate
+  hosted on that same domain. Those are recorded below. The certifications are
+  organizational and laboratory accreditations, NOT API or interoperability conformance;
+  they are captured here because they are the only verifiable compliance program the
+  company publishes.
+api_standards:
+- id: openapi
+  conforms: false
+  evidence: >-
+    No OpenAPI/Swagger document at any probed path on foresight-dx.com
+    (/openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs,
+    /docs, /redoc all HTTP 404). No API host exists to probe.
+- id: asyncapi
+  conforms: false
+  evidence: No event, streaming or webhook surface is documented or advertised.
+- id: graphql
+  conforms: false
+  evidence: https://foresight-dx.com/graphql returned HTTP 404.
+- id: oauth2
+  conforms: false
+  evidence: >-
+    /.well-known/oauth-authorization-server and /.well-known/openid-configuration
+    both returned HTTP 404. No authorization server is published.
+- id: rfc9457
+  conforms: false
+  evidence: No API contract exists in which to declare application/problem+json.
+- id: fhir
+  conforms: false
+  evidence: >-
+    No FHIR endpoint, capability statement or interoperability claim is published.
+    Results are delivered as clinical laboratory reports, not through a health-data API.
+- id: hl7v2
+  conforms: false
+  evidence: >-
+    No HL7 v2 interface is advertised on the public site, though a CLIA laboratory
+    of this kind would typically exchange orders and results with ordering
+    institutions over private, contracted interfaces that are not public.
+certifications:
+- id: iso-27001
+  name: ISO/IEC 27001:2013 Information Security Management System
+  conforms: true
+  identifier: BMSC-049-2312-ISMS1012
+  evidence: >-
+    Certificate number published in the footer of every page on foresight-dx.com and
+    the certificate PDF served from the company's own domain at
+    https://foresight-dx.com/wp-content/uploads/2024/07/Foresight-ISO-27001.pdf
+    (HTTP 200, application/pdf, 897,176 bytes).
+- id: clia
+  name: CLIA certification (Clinical Laboratory Improvement Amendments)
+  conforms: true
+  identifier: 06D2287941
+  evidence: >-
+    CLIA number 06D2287941 published in the site-wide footer of foresight-dx.com.
+- id: cap
+  name: College of American Pathologists (CAP) laboratory accreditation
+  conforms: true
+  identifier: '9346637'
+  evidence: >-
+    CAP number 9346637 published in the site-wide footer of foresight-dx.com.
+regulatory_status:
+- id: fda-clearance
+  conforms: false
+  evidence: >-
+    The company states on every page that "Foresight CLARITY has not been cleared or
+    approved by the US Food and Drug Administration (FDA)" and that it was developed
+    and its performance characteristics determined by Foresight's central laboratory —
+    i.e. it is offered as a laboratory-developed test (LDT).

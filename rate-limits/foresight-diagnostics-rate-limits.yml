@@ -1,0 +1,14 @@
+generated: '2026-08-16'
+method: searched
+source: https://foresight-dx.com/
+limit_count: 0
+note: >-
+  There is nothing to rate-limit. Foresight Diagnostics publishes no API, so no
+  published limits, no windows, no burst allowances, no X-RateLimit-*/RateLimit-*/
+  Retry-After response headers and no 429 semantics exist to record. Contract
+  discovery found no OpenAPI at any probed path, no GraphQL endpoint, no MCP server
+  and no API subdomain (see well-known/foresight-diagnostics-well-known.yml and the
+  x-coverage block in apis.yml). NO RateLimits pointer is wired in apis.yml, because
+  a pointer would credit the provider with a runtime rate-limit signal it does not
+  publish. This file records a verified zero, not an unchecked one.
+rate_limits: []

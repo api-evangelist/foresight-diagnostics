@@ -1,0 +1,30 @@
+generated: '2026-08-16'
+method: searched
+source: https://foresight-dx.com/
+plan_count: 0
+note: >-
+  Foresight Diagnostics publishes no pricing page and no plans of any kind. The
+  20-page public site (enumerated from https://foresight-dx.com/page-sitemap1.xml,
+  HTTP 200) contains no /pricing, /plans or /packages URL, and no machine-readable
+  pricing or catalog endpoint exists. The commercial motion is a clinical laboratory
+  service sold through direct engagement: biopharma sponsors are routed to
+  /foresight-products-services/for-biopharma/, academic researchers to an
+  investigator-initiated research application and an RFP form, and everyone else to
+  the contact form at /contact/ (info@foresight-dx.com). Test pricing is set by
+  contract and payer reimbursement, not published rate cards. NO Pricing or Plans
+  pointer is wired in apis.yml, because a pointer would assert the provider publishes
+  plans when it publishes none.
+plans: []
+sales_channels:
+- audience: Biopharma sponsors
+  url: https://foresight-dx.com/foresight-products-services/for-biopharma/
+  mechanism: contact / direct engagement
+- audience: Academic researchers
+  url: https://foresight-dx.com/foresight-products-services/for-academic-researchers/foresight-iir/
+  mechanism: investigator-initiated research application
+- audience: Academic researchers
+  url: https://foresight-dx.com/foresight-products-services/for-academic-researchers/foresight-rfp/
+  mechanism: request for proposal
+- audience: General
+  url: https://foresight-dx.com/contact/
+  mechanism: contact form / info@foresight-dx.com

@@ -42,5 +42,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Foresight Diagnostics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Foresight Diagnostics is a CLIA-certified, CAP-accredited cancer diagnostics company founded in 2020 in
+Boulder, Colorado, and since February 2026 a wholly owned subsidiary of Natera. Its Foresight CLARITY
+minimal residual disease (MRD) platform is a liquid-biopsy test powered by proprietary PhasED-Seq
+phased-variant sequencing. The company sells laboratory testing services rather than software and
+publishes no public API, SDK or machine-readable specification.
+
+- https://foresight-dx.com/

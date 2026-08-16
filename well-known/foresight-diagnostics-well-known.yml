@@ -1,0 +1,38 @@
+generated: '2026-08-16'
+method: probed
+source: live HTTPS probes of https://foresight-dx.com/.well-known/*
+note: >-
+  Every probed /.well-known/ path returned HTTP 404 with the WordPress "Not Found"
+  template. No document of any kind is served from the well-known namespace on the
+  company's only public host, so NO WellKnown and NO SecurityTxt pointer is wired in
+  apis.yml — this file records a verified absence, not a presence. No api.*, portal.*,
+  developer.*, docs.*, app.* or status.* subdomain resolves for foresight-dx.com, so
+  foresight-dx.com is the only host there was to probe.
+hosts:
+- host: foresight-dx.com
+  probes:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+summary:
+  probed: 7
+  hits: 0
+  documents_saved: 0

@@ -1,17 +1,33 @@
 aid: foresight-diagnostics
 name: Foresight Diagnostics
-description: 'Foresight Diagnostics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Foresight Diagnostics is a CLIA-certified, CAP-accredited cancer diagnostics
+  company founded in 2020 in Boulder, Colorado by Stanford physicians and scientists,
+  and since February 2026 a wholly owned subsidiary of Natera. Its Foresight CLARITY
+  minimal residual disease (MRD) platform is a liquid-biopsy test powered by proprietary
+  PhasED-Seq phased-variant sequencing and bioinformatics, detecting circulating tumor
+  DNA at an analytical sensitivity below one part per million across lymphoma, lung and
+  other solid tumors. The company sells laboratory testing services to biopharma sponsors,
+  academic researchers and clinicians rather than software: it operates a central
+  laboratory and publishes no public developer program, API, SDK or machine-readable
+  specification of any kind.'
+image: https://foresight-dx.com/wp-content/uploads/2024/09/X-OpenGraph-Image-1200x630-2x.png
 url: https://raw.githubusercontent.com/api-evangelist/foresight-diagnostics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
 tags:
 - Company
+- Healthcare
+- Diagnostics
+- Oncology
+- Genomics
+- Precision Medicine
+- Laboratory
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,56 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://foresight-dx.com/
+- type: Products
+  url: https://foresight-dx.com/foresight-products-services/
+- type: Technology
+  url: https://foresight-dx.com/our-technology/
+- type: Resources
+  url: https://foresight-dx.com/resources/
+- type: News
+  url: https://foresight-dx.com/news/
+- type: BlogRSS
+  url: https://foresight-dx.com/feed/
+- type: Support
+  url: https://foresight-dx.com/contact/
+- type: TermsOfService
+  url: https://foresight-dx.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://foresight-dx.com/privacy-policy/
+- type: Careers
+  url: https://foresight-dx.com/careers/
+- type: Compliance
+  url: conformance/foresight-diagnostics-conformance.yml
+- type: Conformance
+  url: conformance/foresight-diagnostics-conformance.yml
+- type: DomainSecurity
+  url: security/foresight-diagnostics-domain-security.yml
+- type: LLMsTxt
+  url: llms/foresight-diagnostics-llms.txt
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Foresight Diagnostics is a CLIA-certified central laboratory that sells a
+    liquid-biopsy MRD test, not software: its entire public presence is a 20-page
+    WordPress marketing site whose only machine-readable endpoint is the stock
+    WordPress wp-json CMS API, and no api./portal./developer./docs./app./results./
+    provider./status. subdomain of foresight-dx.com resolves in DNS.
+  evidence:
+  - url: https://foresight-dx.com/openapi.json
+    status: 404
+  - url: https://foresight-dx.com/graphql
+    status: 404
+  - url: https://foresight-dx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://foresight-dx.com/llms.txt
+    status: 404
+  - url: https://foresight-dx.com/page-sitemap1.xml
+    status: 200
+  checked: '2026-08-16'
