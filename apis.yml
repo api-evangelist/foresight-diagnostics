@@ -10,6 +10,17 @@ description: 'Foresight Diagnostics is a CLIA-certified, CAP-accredited cancer d
   academic researchers and clinicians rather than software: it operates a central
   laboratory and publishes no public developer program, API, SDK or machine-readable
   specification of any kind.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://foresight-dx.com/wp-content/uploads/2024/09/X-OpenGraph-Image-1200x630-2x.png
 url: https://raw.githubusercontent.com/api-evangelist/foresight-diagnostics/refs/heads/main/apis.yml
 x-type: company
